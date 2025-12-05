@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #000914;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .container {
+            position: relative; top: -40px;
+            width: 350px;
+            padding: 30px;
+            background: #151921;
+            border-radius: 16px;
+            border: 2px solid #00eaff;
+            box-shadow: 0 0 15px #00eaffaa;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00eaff;
+            font-family: 'Science Gothic', sans-serif;
+            font-size: 48px;
+            width: 100%;
+            text-shadow: 0 0 8px #00eaff, 0 0 15px #00eaff66, 0 0 20px #00eaff33;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #e0f7ff;
+        }
+
+        .input-group input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #00eaff;
+            font-size: 15px;
+            outline: none;
+            transition: 0.2s;
+            background-color: #e0f7ff;
+            color: #000914;
+        }
+
+        .input-group input:focus {
+            border-color: #00eaff;
+            box-shadow: 0 0 10px #00eaff99;
+        }
+
+        .btn {
+            margin-top: 20px;
+            width: 50%;
+            padding: 10px;
+            margin: 10px auto 0 auto;
+            background: none;
+            border: 2px solid #00eaff;
+            border-radius: 10px;
+            color: #00eaff;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 15px #00eaff88, 0 0 30px #00eaff55, 0 0 45px #00eaff33;
+            display: block;
+        }
+
+        .btn:hover {
+            opacity: 0.7;
+            text-shadow: 0 0 8px #00eaff;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #e0f7ff;
+        }
+
+        .footer-text a {
+            color: #00eaff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Megamorph</h2>
+        <form action="login.html">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required />
+            </div>
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required />
+            </div>
+            <button class="btn" type="submit">Sign Up</button>
+        </form>
+        <p class="footer-text">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+</body>
+</html>
