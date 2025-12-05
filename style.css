@@ -1,0 +1,57 @@
+* {
+    margin:0;
+    padding:0;box-sizing:border-box;}
+body {
+    background:#05010d;font-family:"Orbitron",sans-serif;overflow:hidden;}
+
+.navbar {
+    position:sticky; top:0; z-index:1000; display:flex; align-items:center; justify-content:space-between;
+    padding:0 25px; height:80px; background:rgba(20,10,40,0.85);
+    border-bottom:2px solid #00eeff; backdrop-filter:blur(12px);
+    box-shadow:0 0 50px #00eaff88,0 0 100px #ff00f5aa,0 0 150px #00ffea44;
+}
+
+.menu-logo-container {
+    display:flex;align-items:center;gap:15px;position:relative;}
+.logo {
+    background:linear-gradient(90deg,#10e7ff,#ff00f5,#00ffea);
+    -webkit-background-clip:text; color:transparent; font-weight:900; font-size:30px; letter-spacing:2px;
+}
+
+.toolbar {
+    display:flex;align-items:center;gap:8px;}
+.toolbar button {
+    background:#130b49;border:2px solid #00ffe5;color:#00ffea;padding:8px 12px;
+    cursor:pointer;border-radius:8px;transition:0.2s;font-size:14px;
+}
+.toolbar button:hover {
+    background:#00ffe5;color:#0a002e;box-shadow:0 0 15px #00f6d9,0 0 25px #ff00f5;}
+
+#container {
+    width:100vw;height:calc(100vh - 80px);background:radial-gradient(circle, rgba(0,220,255,0.1)0%,#05010d 80%);}
+
+.menu-dot {
+    font-size:28px; cursor:pointer;color:#00ffe5;transition:0.2s;}
+.menu-dot:hover {
+    color:#ff00f5;text-shadow:0 0 10px #00ffe5,0 0 15px #ff00f5;}
+
+.dropdown {
+    position:absolute; top:40px; left:0; display:none; flex-direction:column; background:rgba(30,20,60,0.95);
+    backdrop-filter:blur(8px); border:1px solid #00ffe5; border-radius:12px; overflow:hidden; z-index:2000; width:150px;
+}
+.dropdown button {
+    background:transparent;border:none;color:#00ffea;padding:12px 16px;font-size:16px;cursor:pointer;text-align:left;transition:0.2s;}
+.dropdown button:hover {
+    background:#00ffe5;color:#0a002e;}
+
+.shapes-navbar {
+    position:relative;}
+.shapes-dropdown {
+    position:absolute;top:35px;left:0;display:none;flex-direction:column;
+    background: rgba(30,20,60,0.95);backdrop-filter:blur(8px);border:1px solid #00ffe5;border-radius:8px;z-index:1500;
+}
+.shapes-dropdown button {
+    padding:8px 12px;font-size:14px;background:transparent;border:none;color:#00ffea;cursor:pointer;text-align:left;
+}
+.shapes-dropdown button:hover {
+    background:#00ffe5;color:#0a002e;}
